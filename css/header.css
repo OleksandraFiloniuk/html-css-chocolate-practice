@@ -17,11 +17,37 @@
 .main-nav-item {
 }
 .main-nav-link {
+  position: relative;
   padding: 11px 0px;
   display: block;
   font-weight: 500;
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 .main-nav-link:hover,
-.main-nav-link:focus {
+.main-nav-link:focus,
+.main-nav-link.current {
+  color: #fd9222;
+}
+.main-nav-link.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background: #fd9222;
+}
+.socials-item {}
+.socials-link{}
+.socials-icon {
+  color: #111;
+}
+.socials-link:hover .socials-icon {
+   color: #fd9222;
+}
+.socials-link:focus .socials-icon {
   color: #fd9222;
 }

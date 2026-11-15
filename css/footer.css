@@ -34,6 +34,8 @@
 }
 .contacts-link {
   color: #fff;
+   transition: 300ms ease-out;
+  transition-property: color;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -54,6 +56,8 @@
   padding: 11px 0;
   font-weight: 500;
   color: #fff;
+   transition: 300ms ease-out;
+  transition-property: color;
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {

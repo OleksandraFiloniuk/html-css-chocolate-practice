@@ -2,23 +2,28 @@
   padding-bottom: 120px;
 }
 .reviews-title {
+  margin-bottom: 90px;
 }
 .reviews-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px; 
+  gap: 28px;
 }
 .reviews-item {
+  position: relative;
   margin-bottom: 90px;
-padding: 56px 24px 24px;
-  width:calc((100% - 28px * 2) / 3);
+  padding: 56px 24px 24px;
+  width: calc((100% - 28px * 2) / 3);
   box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.1);
   background-color: #fff;
   border: 1px solid rgba(17, 17, 17, 0.1);
-border-radius: 16px;
-
+  border-radius: 16px;
 }
 .reviews-avatar {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .reviews-author {
   margin-bottom: 24px;

@@ -74,8 +74,8 @@ img {
   padding: 0 16px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /*outline: 2px solid red;
+  outline-offset: -2px;*/
 }
 .logo {
   display: inline-flex;
@@ -99,7 +99,10 @@ img {
   gap: 14px;
 }
 .socials-light .socials-link {
-background-color:#fff
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.socials-light .socials-icon {
+  color: #fff;
 }
 .socials-item {
   width: 40px;
@@ -115,12 +118,21 @@ background-color:#fff
 
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 10px;
+  transition: 300ms ease-out;
+  transition-property: border-color;
 }
 .socials-link:hover,
 .socials-link:focus {
-  border: 1px solid rgba(253, 146, 34, 0.1);
+  border-color: rgba(253, 146, 34, 0.1);
 }
 .socials-icon {
+  color: #111111;
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  color: #fd9222;
 }
 
 /* Button Styles */
@@ -130,6 +142,8 @@ background-color:#fff
   border-radius: 100px;
   background-color: transparent;
   border: 1px solid transparent;
+  transition: 300ms ease-out;
+  transition-property: color, background-color, border-color;
 }
 .btn-filled {
   color: #fff;
@@ -138,7 +152,7 @@ background-color:#fff
 .btn-filled:hover,
 .btn-filled:focus {
   color: #fd9222;
-  background: rgba(253, 146, 34, 0.1);
+  background-color: rgba(253, 146, 34, 0.1);
 }
 .btn-outlined {
 }
